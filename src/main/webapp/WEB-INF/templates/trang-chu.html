@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+</head>
+<body>
+    Trang Chủ 2 Xin Chào
+    <h3 th:text="${message}"></h3>
+    <h3 th:text="${listPerson}"></h3>
+
+    <table>
+        <tr th:each="obj: ${listPerson}">
+            <td th:text="${obj.id}"></td>
+            <td th:text="${obj.name}"></td>
+        </tr>
+    </table>
+</body>
+</html>
